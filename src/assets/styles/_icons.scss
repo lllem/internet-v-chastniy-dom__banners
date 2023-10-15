@@ -1,0 +1,102 @@
+$icon-time: 3s;
+
+.ivchd-icon {
+  background-color: $red;
+  display: inline-block;
+  border-radius: 50%;
+  height: 2em;
+  width: 2em;
+  text-align: center;
+  line-height: 2em;
+  color: #fff;
+  font-size: 1rem;
+  position: relative;
+  transform: translate(-50%, -50%);
+
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0.33em;
+    z-index: 1;
+  }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: $red;
+    animation: ivchd-pulse $icon-time infinite;
+    animation-delay: -$icon-time*75;
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: $red;
+    animation: ivchd-pulse-scale $icon-time infinite;
+  }
+
+  &.ivchd-icon_small {
+    position: absolute;
+    font-size: 0.5rem;
+  }
+}
+
+.ivchd-icon_big {
+  position: absolute;
+  z-index: 4;
+  top: 13%;
+  left: 13%;
+
+  > .ivchd-icon {
+    font-size: 2rem;
+  }
+}
+
+.ivchd-icon_big_100 {
+  position: absolute;
+  z-index: 4;
+  top: 8%;
+  left: 8%;
+  width: 20%;
+
+  > .ivchd-icon {
+    font-size: 1.25rem;
+    padding: 0.33em;
+  }
+}
+
+@keyframes ivchd-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  } 75%, 100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+@keyframes ivchd-pulse-scale {
+  0% {
+    transform: scale(1);
+  } 50% {
+    transform: scale(1.25);
+  }
+}

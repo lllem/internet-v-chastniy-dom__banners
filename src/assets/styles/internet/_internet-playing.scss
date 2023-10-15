@@ -1,0 +1,55 @@
+.playing {
+  .internet-playing-tv {
+    animation: internet-playing-tv $time infinite;
+  }
+  .internet-playing-boy {
+    transform-origin: 50% 100%;
+    animation: internet-playing-boy $time infinite;
+  }
+  .internet-playing-girl {
+    transform-origin: 50% 100%;
+    animation: internet-playing-girl $time infinite;
+  }
+
+  .internet-playing-tv__screen {
+    position: absolute;
+    top: 31.75%;
+    bottom: 31.75%;
+    left: 25.5%;
+    right: 25.5%;
+    display: inline-block;
+  }
+}
+
+
+@keyframes internet-playing-tv {
+  0% {
+    transform: scale(2.75);
+  } 33% {
+    transform: scale(1 + (2.75-1) * $slow);
+  } 100% {
+    transform: scale(1);
+  }
+}
+
+
+@keyframes internet-playing-boy {
+  0% {
+    transform: translateX(-50%) scale(2.75);
+  } 33% {
+    transform: translateX(-5%) scale(1 + (2.75-1) * $slow);
+  } 100% {
+    transform: translateX(0%) scale(1);
+  }
+}
+
+
+@keyframes internet-playing-girl {
+  0% {
+    transform: translateX(50%) scale(2.75);
+  } 33% {
+    transform: translateX(5%) scale(1 + (2.75-1) * $slow);
+  } 100% {
+    transform: translateX(0%) scale(1);
+  }
+}

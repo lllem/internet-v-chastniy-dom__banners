@@ -1,0 +1,35 @@
+.r600x600,
+.r592x618,
+.r600x450 {
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: '';
+    display: inline-block;
+  }
+
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.r592x618 {
+  max-width: 434px;
+}
+
+.r600x600::before {
+  padding-top: 100%;
+}
+
+.r600x450::before {
+  padding-top: 3/4 * 100%;
+}
+
+.r592x618::before {
+  padding-top: 592/618 * 100%;
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles/main.css">
+  <title>Усилитель | internet-v-chastniy-dom</title>
+
+  <style>
+    /* это копировать не нужно, это только для этой страницы */
+
+    html, body {
+      height: 100%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    body {
+      margin: 2rem;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .ivchd-banner,
+    .illustration,
+    nav {
+      margin: 5rem auto;
+    }
+
+    nav{
+      margin: 2rem 1rem;
+      color: #aaaa;
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 5rem auto 0rem;
+    }
+
+    a {
+      color: #00adff;
+      padding: 1rem;
+    }
+
+    a.active {
+      color: #000;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Все баннеры</a> |
+    <a href="internet.html">Интернет</a> |
+    <a href="video.html">Видео</a> |
+    <a class="active" href="signal-gain.html">Усилитель</a>
+  </nav>
+
+
+  <h2>Усиление сигнала</h2>
+
+
+  <!-- Баннер Усиление сигнала -->
+  <div class="ivchd-banner animation-5 r600x450">
+
+    <!-- Слайд с мужиком -->
+    <div class="ivchd-slide ivchd-slide r600x450">
+      <div class="ivchd-icon_big">
+        <div class="ivchd-icon">
+          <div>
+            <img src="./assets/img/icons/icon-wifi.svg">
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+        class="zoom-in full-size bg-cover sprite"
+        style="background-image: url(./assets/img/signal-gain/banner/man.webp);"
+        >
+          <div class="ivchd-icon ivchd-icon_small" style="left:65%;top:68%;"></div>
+        </div>
+      </div>
+    </div>
+    <!-- / Слайд с мужиком -->
+
+    <!-- Слайд с домом -->
+    <div class="ivchd-slide simple-img-zoom ivchd-slide r600x450">
+      <div class="ivchd-icon_big">
+        <div class="ivchd-icon">
+          <div>
+            <img src="./assets/img/icons/icon-wifi.svg">
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+        class="zoom-out full-size bg-cover sprite"
+        style="background-image: url(./assets/img/signal-gain/banner/roof.webp);"
+        >
+          <div class="ivchd-icon ivchd-icon_small" style="right:37.5%;top:27.5%;"></div>
+        </div>
+      </div>
+    </div>
+    <!-- / Слайд с домом -->
+
+    <!-- Слайд с девушкой -->
+    <div class="signal-gain phone ivchd-slide r600x450">
+      <div class="ivchd-icon_big">
+        <div class="ivchd-icon">
+          <div>
+            <img src="./assets/img/icons/icon-loss.svg">
+          </div>
+        </div>
+      </div>
+      <div
+      class="signal-gain__phone-bg full-size bg-cover sprite"
+      style="background-image: url(./assets/img/signal-gain/banner/phone/bg.webp);"
+      ></div>
+      <div
+      class="signal-gain__phone-sofa full-size bg-cover sprite"
+      style="background-image: url(./assets/img/signal-gain/banner/phone/sofa.webp);"
+      ></div>
+      <div
+      class="signal-gain__phone-girl full-size bg-cover sprite"
+      style="background-image: url(./assets/img/signal-gain/banner/phone/girl.webp);"
+      >
+        <div class="ivchd-icon ivchd-icon_small" style="top:30.75%;right:25%;"></div>
+      </div>
+      <div
+      class="signal-gain__phone-cocktail full-size bg-cover sprite"
+      style="background-image: url(./assets/img/signal-gain/banner/phone/cocktail.webp);"
+      ></div>
+    </div>
+    <!-- / Слайд с девушкой -->
+
+    <!-- Слайд с телевизором -->
+    <div class="signal-gain watch-tv ivchd-slide r600x450">
+      <div class="ivchd-icon_big_100">
+        <img src="./assets/img/icons/icon-100mbit_red.svg">
+      </div>
+      <div>
+        <div
+        class="signal-gain-watch-tv-bg full-size bg-cover sprite"
+        style="background-image: url(./assets/img/signal-gain/banner/watch-tv/bg.webp);"
+        >
+          <div class="ivchd-icon ivchd-icon_small" style="top: 8%;left: 67%;"></div>
+        </div>
+        <div
+        class="signal-gain-watch-tv-hand full-size bg-contain sprite"
+        style="background-image: url(./assets/img/signal-gain/banner/watch-tv/hand.webp);"
+        ></div>
+        <div
+        class="signal-gain-watch-tv-front full-size bg-contain sprite"
+        style="background-image: url(./assets/img/signal-gain/banner/watch-tv/front.webp);"
+        ></div>
+      </div>
+    </div>
+    <!-- / Слайд с телевизором -->
+
+    <!-- Слайд с игрой -->
+    <div class="ivchd-slide playing r600x450">
+      <div class="ivchd-icon_big">
+        <div class="ivchd-icon">
+          <div>
+            <img src="./assets/img/icons/icon-games.svg">
+          </div>
+        </div>
+      </div>
+      <div
+      class="internet-playing-tv full-size bg-cover sprite"
+      style="background-image: url(./assets/img/internet/banner/playing/playing-tv.webp);"
+      >
+        <div
+        class="internet-playing-tv__screen bg-cover"
+        style="background-image: url(./assets/img/internet/banner/playing/rocket-league-screen-1.webp);">
+          <div class="ivchd-icon ivchd-icon_small" style="top:0;left:0;"></div>
+        </div>
+      </div>
+      <div
+      class="internet-playing-boy full-size bg-cover sprite"
+      style="background-image: url(./assets/img/internet/banner/playing/playing-boy.webp);"
+      ></div>
+      <div
+      class="internet-playing-girl full-size bg-cover sprite"
+      style="background-image: url(./assets/img/internet/banner/playing/playing-girl.webp);"
+      ></div>
+    </div>
+    <!-- / Слайд с игрой -->
+
+  </div>
+  <!-- / Баннер Усиление сигнала -->
+
+
+
+  <!-- Иллюстрация Усиление Сигнала -->
+  <div class="illustration r592x618">
+    <div class="full-size bg-contain" style="background-image: url(./assets/img/signal-gain/isometric/illustration__bg.svg);">
+      <div class="ivchd-icon" style="top:27.5%;left:13.25%;font-size:0.5rem;"></div>
+      <div class="ivchd-icon" style="top:40.5%;left:13.6%;font-size:0.7rem;"></div>
+      <div class="ivchd-icon" style="top:28.75%;left:46.3%;font-size:1.25rem;"></div>
+      <div class="ivchd-icon" style="top:26.2%;left:67.75%;font-size:1.25rem;"></div>
+      <img class="illustration__icon" src="./assets/img/icons/icon-100mbit_red.svg" style="left:10%;top:55%;animation-delay:0s;">
+      <img class="illustration__icon" src="./assets/img/icons/icon-wifi_red.svg" style="left:20%;top:48%;animation-delay:2s;">
+      <img class="illustration__icon" src="./assets/img/icons/icon-loss_red.svg" style="left:27%;top:50%;animation-delay:3.5s;">
+    </div>
+    <svg class="illustration__line full-size" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 592 618" preserveAspectRatio="xMidYMid meet">>
+      <path d="M500.8,119.8L313.4,11.6c-10.3-6-23-6-33.4,0l-221.7,128v99.8L272.7,111v72.4"/>
+      <polyline id="line_2_" class="st0" points="257.8,120.2 296.5,96.4 401.4,158.8 "/>
+    </svg>
+    <div class="full-size bg-contain" style="background-image: url(./assets/img/signal-gain/isometric/illustration__tech.svg);"
+    ></div>
+  </div>
+  <!-- / Иллюстрация Усиление Сигнала -->
+
+
+</body>
+</html>

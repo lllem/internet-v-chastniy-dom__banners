@@ -1,0 +1,34 @@
+.video.camera-1 {
+  .video-camera-1-bg,
+  .video-camera-1-camera {
+    transform: scale(1);
+    transform-origin:80% 60%;
+    animation: video-camera-1 $time infinite;
+  }
+
+  .video-camera-1-camera-svg {
+    circle {
+      animation: video-camera-1-camera-svg $time infinite;
+    }
+  }
+}
+
+@keyframes video-camera-1-camera-svg {
+  0% {
+    r: 225;
+  } 25% {
+    r: 190;
+  } 100% {
+    r: 175;
+  }
+}
+
+@keyframes video-camera-1 {
+  0% {
+    transform: scale(0.75);
+  } 25% {
+    transform: scale(1 + (0.75 - 1) * $slow);
+  } 100% {
+    transform: scale(1);
+  }
+}

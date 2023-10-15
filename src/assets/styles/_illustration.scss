@@ -1,0 +1,53 @@
+.illustration {
+  overflow: hidden;
+  max-width: 592px;
+
+  .ivchd-icon {
+    font-size: 0.75rem;
+    position: absolute;
+  }
+
+  .illustration__icon {
+    position: absolute;
+    z-index: 2;
+    width: 6%;
+    height: 5%;
+    animation: icon-animation 3s infinite linear;
+    opacity: 0;
+  }
+
+  .illustration__line {
+    path,
+    polyline {
+      fill:none;
+      stroke:#EA0C0C;
+      stroke-width: 3;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+      stroke-miterlimit: 10;
+      stroke-dasharray: 12 12;
+      animation: dash-line 15s infinite linear reverse;
+    }
+  }
+}
+
+@keyframes dash-line {
+  from {
+    stroke-dashoffset: 0%;
+  } to {
+    stroke-dashoffset: 100%;
+  }
+}
+
+@keyframes icon-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  } 25% {
+    opacity: 1;
+    transform: translateY(0);
+  } 50%, 100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}

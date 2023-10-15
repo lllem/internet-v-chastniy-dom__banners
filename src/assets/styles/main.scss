@@ -1,0 +1,62 @@
+
+$time: 5s; // one slide time
+$slow: 0.15; // for animation
+
+@import 'utilities';
+@import 'sizes';
+@import 'colors';
+@import 'icons';
+@import 'animation';
+@import 'illustration';
+
+@import 'internet';
+@import 'signal-gain';
+@import 'video';
+
+
+.ivchd-banner,
+.ivchd-banner_4,
+.ivchd-slide {
+  width: 100%;
+  max-width: 728px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+
+  .sprite {
+    animation-fill-mode: backwards;
+  }
+}
+
+.ivchd-banner_4 .ivchd-slide,
+.ivchd-banner .ivchd-slide {
+  position: absolute !important;
+}
+
+.ivchd-banner {
+  border-radius: 20px;
+}
+
+.rounded {
+  border-radius: 20px;
+}
+
+.full-size {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-contain {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

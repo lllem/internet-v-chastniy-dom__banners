@@ -1,0 +1,35 @@
+.watch-tv {
+  .internet-watch-tv-tv {
+    transform: scale(1);
+    transform-origin: 25% 0%;
+    animation: watch-tv-tv $time infinite;
+  }
+
+  .internet-watch-tv-sofa {
+    background-size: contain;
+    background-position: 50% 100%;
+    transform: scale(1);
+    transform-origin: 75% 60%;
+    animation: watch-tv-sofa $time infinite;
+  }
+}
+
+@keyframes watch-tv-tv {
+  0% {
+    transform: scale(1.25);
+  } 33% {
+    transform: scale(1 + (1.25 - 1) * $slow);
+  } 100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes watch-tv-sofa {
+  0% {
+    transform: scale(2);
+  } 33% {
+    transform: scale(1 + (2 - 1) * $slow);
+  } 100% {
+    transform: scale(1);
+  }
+}

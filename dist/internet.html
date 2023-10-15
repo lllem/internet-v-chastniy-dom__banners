@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles/main.css">
+  <title>Интернет | internet-v-chastniy-dom</title>
+
+  <style>
+    /* это копировать не нужно, это только для этой страницы */
+
+    html, body {
+      height: 100%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    body {
+      margin: 2rem;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .ivchd-banner,
+    .illustration,
+    nav {
+      margin: 5rem auto;
+    }
+
+    nav{
+      margin: 2rem 1rem;
+      color: #aaaa;
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 5rem auto 0rem;
+    }
+
+    a {
+      color: #00adff;
+      padding: 1rem;
+    }
+
+    a.active {
+      color: #000;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Все баннеры</a> |
+    <a class="active" href="internet.html">Интернет</a> |
+    <a href="video.html">Видео</a> |
+    <a href="signal-gain.html">Усилитель</a>
+  </nav>
+
+
+  <h2>Интернет</h2>
+
+
+  <!-- Баннер Интернет -->
+  <div class="ivchd-banner animation-5 r600x450">
+    <!-- Слайд с девушкой -->
+    <div class="ivchd-slide girl r600x450">
+      <div class="ivchd-icon_big">
+        <div class="ivchd-icon">
+          <div>
+            <img src="./assets/img/icons/icon-wifi.svg">
+          </div>
+        </div>
+      </div>
+      <div
+      class="internet-girl-interior full-size bg-cover sprite"
+      style="background-image: url(./assets/img/internet/banner/girl/girl-interior.webp);"
+      ></div>
+      <div
+      class="internet-girl-girl full-size bg-cover sprite"
+      style="background-image: url(./assets/img/internet/banner/girl/girl-girl.webp);"
+      >
+        <div class="ivchd-icon ivchd-icon_small" style="bottom:18.5%;left:31%;"></div>
+      </div>
+    </div>
+    <!-- / Слайд с девушкой -->
+
+    <!-- Слайд с телевизором -->
+    <div class="ivchd-slide watch-tv ivchd-slide r600x450">
+      <div class="ivchd-icon_big">
+        <div class="ivchd-icon">
+          <div>
+            <img src="./assets/img/icons/icon-play.svg">
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+        class="internet-watch-tv-tv full-size bg-cover sprite"
+        style="background-image: url(./assets/img/internet/banner/watch-tv/watch-tv-tv.webp);"
+        >
+          <div class="ivchd-icon ivchd-icon_small" style="top:6%;left:23.5%;"></div>
+        </div>
+        <div
+        class="internet-watch-tv-sofa full-size bg-contain sprite"
+        style="background-image: url(./assets/img/internet/banner/watch-tv/watch-tv-sofa.webp);"
+        ></div>
+      </div>
+    </div>
+    <!-- / Слайд с телевизором -->
+
+    <!-- Слайд с игрой -->
+    <div class="ivchd-slide playing r600x450">
+      <div class="ivchd-icon_big">
+        <div class="ivchd-icon">
+          <div>
+            <img src="./assets/img/icons/icon-games.svg">
+          </div>
+        </div>
+      </div>
+      <div
+      class="internet-playing-tv full-size bg-cover sprite"
+      style="background-image: url(./assets/img/internet/banner/playing/playing-tv.webp);"
+      >
+        <div
+        class="internet-playing-tv__screen bg-cover"
+        style="background-image: url(./assets/img/internet/banner/playing/rocket-league-screen-1.webp);">
+          <div class="ivchd-icon ivchd-icon_small" style="top:0;left:0;"></div>
+        </div>
+      </div>
+      <div
+      class="internet-playing-boy full-size bg-cover sprite"
+      style="background-image: url(./assets/img/internet/banner/playing/playing-boy.webp);"
+      ></div>
+      <div
+      class="internet-playing-girl full-size bg-cover sprite"
+      style="background-image: url(./assets/img/internet/banner/playing/playing-girl.webp);"
+      ></div>
+    </div>
+    <!-- / Слайд с игрой -->
+
+    <!-- Слайд с матерью -->
+    <div class="ivchd-slide ivchd-slide r600x450">
+      <div class="ivchd-icon_big">
+        <div class="ivchd-icon">
+          <div>
+            <img src="./assets/img/icons/icon-wifi.svg">
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+        class="zoom-in full-size bg-cover sprite"
+        style="background-image: url(./assets/img/internet/banner/mother-1.webp);"
+        >
+          <div class="ivchd-icon"></div>
+        </div>
+      </div>
+    </div>
+    <!-- / Слайд с матерью -->
+
+    <!-- Слайд с матерью #2 -->
+    <div class="ivchd-slide simple-img-zoom ivchd-slide r600x450">
+      <div class="ivchd-icon_big">
+        <div class="ivchd-icon">
+          <div>
+            <img src="./assets/img/icons/icon-wifi.svg">
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+        class="zoom-out full-size bg-cover sprite"
+        style="background-image: url(./assets/img/internet/banner/mother-2.webp);"
+        >
+          <div class="ivchd-icon"></div>
+        </div>
+      </div>
+    </div>
+    <!-- / Слайд с матерью #2 -->
+
+  </div>
+  <!-- / Баннер Интернет -->
+
+
+  <!-- Иллюстрация Интернет -->
+  <div class="illustration r592x618">
+    <div
+    class="full-size bg-contain"
+    style="background-image: url(./assets/img/internet/isometric/illustration__bg.svg);"
+    >
+      <div class="ivchd-icon" style="top:28%;left:13%;"></div>
+      <div class="ivchd-icon" style="top:43%;left:13.25%;font-size:1.1rem;"></div>
+      <div class="ivchd-icon" style="font-size:0.5rem;top:35%;left:46.3%;"></div>
+    </div>
+    <svg class="illustration__line full-size" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 592 618" preserveAspectRatio="xMidYMid meet">>
+    <path d="M500.8,119.8L313.4,11.6c-10.3-6-23-6-33.4,0l-221.7,128v129.8l198.4-118.7c7-4.2,15.9,0.9,15.9,9
+    V211"/>
+    </svg>
+    <div
+    class="full-size bg-contain"
+    style="background-image: url(./assets/img/internet/isometric/illustration__tech.svg);"
+    ></div>
+  </div>
+  <!-- / Иллюстрация Интернет -->
+
+
+</body>
+</html>

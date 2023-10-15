@@ -1,0 +1,30 @@
+
+// animations for 5 slide banner
+
+.zoom-in {
+  animation-name: zoom-in;
+  animation-duration: $time;
+  animation-iteration-count: infinite;
+}
+
+.zoom-out {
+  animation-name: zoom-out;
+  animation-duration: $time;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1.25);
+  } 100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(1);
+  } 100% {
+    transform: scale(1.25);
+  }
+}
