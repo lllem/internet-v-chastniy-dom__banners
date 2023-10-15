@@ -1,8 +1,8 @@
 # SVG+CSS Анимации для одногоо из заказчиков
 
-Для запуска
+Для запуска и редактирования
 ```sh
 npm i
-npx live-server
+npx live-server dist
 npx mix watch
 ```
